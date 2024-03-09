@@ -10,7 +10,7 @@ import Home from "./pages/index";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
+    <Route path="/framer-animation-tests" element={<RootLayout />}>
       <Route index element={<Home />} />
     </Route>
   )
