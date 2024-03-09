@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Navigation() {
   function handleClickToLoc(loc: string | undefined) {
@@ -10,37 +10,38 @@ export default function Navigation() {
   }
 
   return (
-    <nav className="fixed bottom-10 z-10 w-full uppercase text-lg">
-      <div className="mx-auto bg-neutral-700 w-max rounded-3xl bg-opacity-80">
-        <ul className="flex justify-evenly gap-2 p-4">
-          <li>
+    <nav className="fixed bottom-10 z-10 w-full text-lg">
+      <div className="mx-auto bg-neutral-700 w-max rounded-3xl bg-opacity-50">
+        <ul className="flex justify-evenly gap-3 p-3">
+          {/* <li>
             <Link to="/" className="bg-neutral-800 py-1.5 px-4 rounded-full">
               Home
             </Link>
-          </li>
+          </li> */}
           <li>
-            <a
-              href=""
+            <button
               onClick={(e) => {
                 e.preventDefault();
                 handleClickToLoc("top");
               }}
-              className="bg-neutral-800 py-1.5 px-4 rounded-full"
             >
-              Top
-            </a>
+              <span className="material-symbols-outlined bg-neutral-800 p-2 rounded-full ring-2 ring-neutral-500">
+                arrow_upward
+              </span>
+            </button>
           </li>
           <li>
-            <a
-              href=""
+            <button
               onClick={(e) => {
                 e.preventDefault();
                 handleClickToLoc("bottom");
               }}
-              className="bg-neutral-800 py-1.5 px-4 rounded-full"
+              className=""
             >
-              Bottom
-            </a>
+              <span className="material-symbols-outlined bg-neutral-800 p-2 rounded-full ring-2 ring-neutral-500">
+                arrow_downward
+              </span>
+            </button>
           </li>
         </ul>
       </div>
