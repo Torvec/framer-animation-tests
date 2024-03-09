@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 export default function Navigation() {
   function handleClickToLoc(loc: string | undefined) {
     loc === "top"
@@ -13,11 +11,6 @@ export default function Navigation() {
     <nav className="fixed bottom-10 z-10 w-full text-lg">
       <div className="mx-auto bg-neutral-700 w-max rounded-3xl bg-opacity-50">
         <ul className="flex justify-evenly gap-3 p-3">
-          {/* <li>
-            <Link to="/" className="bg-neutral-800 py-1.5 px-4 rounded-full">
-              Home
-            </Link>
-          </li> */}
           <li>
             <button
               onClick={(e) => {
