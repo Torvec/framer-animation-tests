@@ -8,7 +8,7 @@ export default function Navigation() {
   }
 
   return (
-    <nav className="fixed bottom-10 z-10 w-full text-lg">
+    <nav className="fixed bottom-10 z-10 w-full text-lg text-white">
       <div className="mx-auto bg-neutral-700 w-max rounded-3xl bg-opacity-50">
         <ul className="flex justify-evenly gap-3 p-3">
           <li>
